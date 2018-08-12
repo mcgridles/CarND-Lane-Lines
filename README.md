@@ -5,7 +5,11 @@
 
 Overview
 ---
-The goal of this project is to identify lane lines in an image, and then apply it to a video stream. Check out [my writeup](writeup.md) to learn more about my process and see how it works.
+The goal of this project is to identify lane lines in an image, and then apply it to a video stream. 
+
+It works by performing Canny edge detection on each frame in the video, then transforming the edges into Hough space, and finally connecting the dots to make a line. The line is then extrapolated to cover the entire lane.
+
+Check out [my writeup](writeup.md) to learn more about my process and see how it works.
 
 Setup
 ---
